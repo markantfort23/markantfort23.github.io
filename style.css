@@ -29,7 +29,7 @@ nav{
 }
 
 .logo{
-    color: #7b5480
+    color: #4E2A84
 }
 
 nav ul li{
@@ -50,7 +50,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #7b5480;
+    background: #4E2A84;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -75,7 +75,11 @@ nav ul li a:hover::after{
 
 
 .header-text h1 span{
-    color: #7b5480
+    color: #4E2A84
+}
+
+.NU{
+    color: #4E2A84
 }
 
 .my-name{
@@ -84,7 +88,7 @@ nav ul li a:hover::after{
     background-size: 200% auto;
     background-image: linear-gradient(
     -225deg,
-    #7b5480 0%,
+    #4E2A84 0%,
     #020504 29%,
     #99b0bc 67%,
     #ffae26 100%
@@ -109,11 +113,11 @@ nav ul li a:hover::after{
     position:relative;
     bottom: 175px;
     right:0px;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    animation: fadeIn 6s;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    -ms-animation: fadeIn 6s;
 }
 
 @keyframes fadeIn{
@@ -167,5 +171,5 @@ nav ul li a:hover::after{
 .sub-title{
     font-size:60px;
     font-weight:600;
-    color: #7b5480;
+    color: #4E2A84;
 }
