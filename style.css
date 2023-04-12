@@ -146,6 +146,56 @@ nav ul li a:hover::after{
   100% { opacity: 1; }
 }
 
+.arrow, .arrow:before{
+    position:absolute;
+    left:50%;
+    animation: fadeIn 7s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+}
+  
+
+.arrow{
+    width:40px;
+    height:40px;
+    bottom: 5%;
+    margin:-20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top:none;
+    border-left:none;
+    border-bottom:2px #080808 solid;
+    border-right:2px #080808 solid;
+}
+
+.arrow:before{
+    content:'';
+    height:20px;
+    width:20px;
+    top:50%;
+    margin:-10px 0 0 -10px;
+    border-top:none;
+    border-left:none;
+    border-bottom: 1px #080808 solid;
+    border-right: 1px #080808 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name:arrow;
+}
+
+@keyframes arrow{
+    0% {opacity: 1;}
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
+}
+
 #about{
     padding: 80px 0;
 }
