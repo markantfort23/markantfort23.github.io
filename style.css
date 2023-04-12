@@ -26,6 +26,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 15px;
 }
 
 .logo{
@@ -159,13 +160,35 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
+.image-stack{
+    display:grid;
+    position:relative;
+    grid-template-columns: repeat(12, lfr);
+}
+
+.image-bottom{
+    grid-column: 4 / -1;
+    grid-row: 1;
+    display:block;
+}
+
+.image-top{
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 1;
+    display:block;
+
+}
+
 .about-col-1 img{
     width:100%;
-    border-radius: 15px;
+    border-radius: 7%;
 }
 
 .about-col-2{
-    flex-basis:60%
+    flex-basis:60%;
+    line-height: 1.8;
 }
 
 .sub-title{
