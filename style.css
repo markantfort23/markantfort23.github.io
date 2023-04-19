@@ -1,13 +1,14 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Anuphan', sans-serif;
     box-sizing: border-box;
 }
 
 body{
     background: #fff;
-    color: #080808
+    color: #555555;
+    letter-spacing: 0.5px;
 }
 
 #header{
@@ -76,11 +77,15 @@ nav ul li a:hover::after{
 
 
 .header-text h1 span{
-    color: #4E2A84
+    color: #4E2A84;
 }
 
 .NU{
-    color: #4E2A84
+    color: #4E2A84;
+}
+
+h1{
+    color:#080808;
 }
 
 .my-name{
@@ -239,6 +244,11 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis:60%;
     line-height: 1.8;
+    font-size: 18px;
+}
+
+#word{
+    color:#080808;
 }
 
 .sub-title{
