@@ -1,7 +1,7 @@
 const theWords = ["Leetcoding 💻", "playing pickup basketball with friends 🏀",
-                  "eating Chipotle 🌯", "reading a fantasy novel 📖", "cooking a new dish 🍳",
+                  "studying at the local coffee shop ☕️", "reading a fantasy novel 📖", "cooking a new dish 🍳",
                   "jogging down Northwestern's Lakefill 🏃", "walking my dog Toby 🐶",
-                  "thrifting around the Chicago suburbs 🧥", "studying at the local coffee shop ☕️",
+                  "thrifting around the Chicago suburbs 🧥", "eating Chipotle 🌯",
                   "spending time with family back home in Albany, NY 🍎"];
 const theBox = document.getElementById("word");
 let idx = 0;

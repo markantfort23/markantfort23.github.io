@@ -3,6 +3,7 @@
     padding:0;
     font-family: 'Anuphan', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -82,6 +83,10 @@ nav ul li a:hover::after{
 
 .NU{
     color: #4E2A84;
+}
+
+.link{
+    text-decoration:none;
 }
 
 h1{
