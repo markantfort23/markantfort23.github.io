@@ -215,7 +215,8 @@ h1{
 }
 
 #About{
-    padding: -100px 0 100px 0;
+    padding: 100px 0px 0px 0px;
+    height: 100vh;
 }
 
 .row{
@@ -276,8 +277,7 @@ h1{
 
 .services-list{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(31%, 31%));
-    grid-gap:40px;
+    grid: auto-flow / 1fr;
     margin-top:50px;
     text-align:center;
 }
@@ -298,7 +298,7 @@ h1{
     margin-top: 15px;
 }
 
-.currently {
+.toolkit-header {
     font-size:40px;
     font-weight:400;
     color: #080808;
