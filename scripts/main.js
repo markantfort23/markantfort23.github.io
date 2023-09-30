@@ -26,4 +26,14 @@ const switchWord = () => {
   writeBox(theWords[idx]);
 };
 
+document.getElementById('logo').onclick = changeColor;   
+
+    function changeColor() {
+      document.getElementById('logo').style.color = "red";
+      setTimeout(function() {
+        document.getElementById('logo').style.color = '#4E2A84';
+      }, 2000);
+    }
+    
+
 switchWord();

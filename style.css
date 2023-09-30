@@ -39,8 +39,9 @@ nav{
     padding-bottom: 15px;
 }
 
-.logo{
-    color: #4E2A84
+#logo{
+    color: #4E2A84;
+    cursor: pointer;
 }
 
 nav ul li{
