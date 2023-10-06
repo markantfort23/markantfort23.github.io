@@ -1,3 +1,15 @@
+var correctPassword = "anna";
+
+function showPasswordPrompt() {
+    var password = prompt("Enter the Password to Access the Secret Page:");
+
+    if (password === correctPassword) {
+        window.location.href = "secret.html";
+    } else {
+        alert("Incorrect password!");
+    }
+}
+
 const theWords = ["Leetcoding 💻", "playing pickup basketball with friends 🏀",
                   "studying at the local coffee shop ☕️", "reading a fantasy novel 📖", "cooking a new dish 🍳",
                   "jogging down Northwestern's Lakefill 🏃", "walking my dog Toby 🐶",
@@ -37,3 +49,75 @@ document.getElementById('logo').onclick = changeColor;
     
 
 switchWord();
+
+function checkAnswers(event) {
+  event.preventDefault();
+
+  var q1 = document.getElementById("q1").value.toLowerCase();
+  var q2 = document.getElementById("q2").value.toLowerCase();
+  var q4 = document.getElementById("q4").value.toLowerCase();
+  var q5 = document.getElementById("q5").value.toLowerCase();
+  var q6 = document.getElementById("q6").value.toLowerCase();
+
+  if (q1 === "katsudon" && q2 === "mark" && q4 === "anna" && q5 === "where you are" && q6 === "love you") {
+      window.location.href = "success.html";
+  } else {
+      alert("Some answers are incorrect. Please try again.");
+  }
+}
+
+function allowDrop(ev) {                
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev) {
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("Text");
+    var dragged = document.getElementById(data);    
+    if(ev.target.tagName == "IMG") {       
+       var parent = ev.target.parentElement || ev.target.parentNode;
+       dragged.parentElement.appendChild(ev.target);
+       parent.appendChild(dragged);
+    } else {
+        //check if the div already has some img, 
+        //swap the 2 images
+        if(ev.target.children.length > 0) {
+            dragged.parentElement.appendChild(ev.target.children[0]);
+        }
+        ev.target.appendChild(dragged);
+    }
+}
+
+    function check() {
+		var i = 1;
+		var correct = true;
+		var numImages = 5;
+		
+		while ( correct && i <= numImages ) {
+			node = document.getElementById( "drag1"+i );
+			correct = ( node.parentNode.id == ( "div2"+i ) );
+			i++;
+		}
+		
+		if ( correct ) {
+		
+			window.location.href = "winner.html";
+		}	
+		else alert ('Wrong');
+	}
+
+  var elem = document.getElementById("animal");
+  var pos = 0;
+  var id = setInterval(frame, 75);
+  function frame() {
+      if (pos >= 100) {
+          pos = -10;
+      } else {
+          pos=pos+0.25;
+          elem.style.left = pos + '%';
+      }
+  }

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0px;
+    color: #398fda;
+}
+
+h3 {
+    margin-top: 40px;
+    color: #c03535;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.boxes-container {
+    position: relative;
+}
+
+.top-box {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #398fda;
+}
+
+.bottom-box {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #e5e5e5;
+    border-style: dashed;
+}
+
+img {
+    width:200px;
+    height:200px;
+}
+
+.bottom {
+    display:flex;
+}
+
+button {
+    position: relative;
+    top: 50px;
+    left: 37%;
+    margin-right: 100px;
+    width: 25%;
+    height: 15%;
+    background-color: #398fda;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#animal {
+    width: 300px;
+    height: auto;
+    bottom: 30%;
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 7s;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 7s;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;    
+    }
+  }

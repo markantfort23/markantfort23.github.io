@@ -1,0 +1,22 @@
+img {
+    width:40%;
+    height:auto;
+    margin-right: auto;
+    animation: 5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
+}
+
+@keyframes pulse {
+  0%, 50%, 100% {  background: #fee; }
+  30%, 80% { background: #fff; }
+}
+
+.container {
+    margin-top: 7%;
+    text-align: center;
+    width: 100%;
+}

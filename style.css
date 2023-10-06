@@ -19,6 +19,10 @@ hr{
     opacity:50%;
 }
 
+.secret-button {
+    cursor: pointer;
+}
+
 #header, #about{
     width: 100%;
     height: 100vh;
