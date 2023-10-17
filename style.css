@@ -308,3 +308,30 @@ h1{
     font-weight:400;
     color: #080808;
 }
+
+#animal {
+    width: 300px;
+    height: auto;
+    bottom: 1%;
+    position: absolute;
+    animation: linear infinite;
+    animation-direction: normal;
+    animation-name: run;
+    animation-duration: 4s;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 4s;
+    transition: transform 1s ease-in-out;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;    
+    }
+  }
+
+  #animal.rotate {
+    transform: rotate(360deg);
+  }

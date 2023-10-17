@@ -110,14 +110,12 @@ function drop(ev) {
 		else alert ('Wrong');
 	}
 
-  var elem = document.getElementById("animal");
-  var pos = 0;
-  var id = setInterval(frame, 75);
-  function frame() {
-      if (pos >= 100) {
-          pos = -10;
-      } else {
-          pos=pos+0.25;
-          elem.style.left = pos + '%';
-      }
-  }
+const animal = document.getElementById('animal');
+
+animal.addEventListener('mouseover', () => {
+  animal.classList.add('rotate');
+});
+
+animal.addEventListener('mouseout', () => {
+  animal.classList.remove('rotate');
+});
