@@ -112,12 +112,8 @@ function drop(ev) {
 
 const animal = document.getElementById('animal');
 
-animal.addEventListener('mouseover', () => {
+animal.addEventListener('click', () => {
   animal.classList.add('rotate');
-});
-
-animal.addEventListener('mouseout', () => {
-  animal.classList.remove('rotate');
 });
 
 var draggableElements = document.getElementsByClassName("draggable");
