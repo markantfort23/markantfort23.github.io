@@ -466,3 +466,7 @@ h1{
     cursor: pointer;
     border-radius: 5px;
 }
+
+#toggleButton:hover {
+    background-color: #494eb9;
+}
