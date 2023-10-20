@@ -43,7 +43,7 @@ document.getElementById('logo').onclick = changeColor;
     function changeColor() {
       document.getElementById('logo').style.color = "red";
       setTimeout(function() {
-        document.getElementById('logo').style.color = '#4E2A84';
+        document.getElementById('logo').style.color = '#323684';
       }, 2000);
     }
     
