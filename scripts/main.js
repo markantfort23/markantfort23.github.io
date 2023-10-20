@@ -119,3 +119,49 @@ animal.addEventListener('mouseover', () => {
 animal.addEventListener('mouseout', () => {
   animal.classList.remove('rotate');
 });
+
+var draggableElements = document.getElementsByClassName("draggable");
+for (var i = 0; i < draggableElements.length; i++) {
+  dragElement(draggableElements[i]);
+}
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  elmnt.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+var drawer = document.getElementById("drawer");
+        var toggleButton = document.getElementById("toggleButton");
+
+        toggleButton.addEventListener("click", function () {
+            if (drawer.style.display === "none" || drawer.style.display === "") {
+                drawer.style.display = "flex";
+            } else {
+                drawer.style.display = "none";
+            }
+        });
