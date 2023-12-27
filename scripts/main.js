@@ -1,15 +1,3 @@
-var correctPassword = "anna";
-
-function showPasswordPrompt() {
-    var password = prompt("Enter the Password to Access the Secret Page:");
-
-    if (password === correctPassword) {
-        window.location.href = "secret.html";
-    } else {
-        alert("Incorrect password!");
-    }
-}
-
 const theWords = ["Leetcoding 💻", "playing pickup basketball with friends 🏀",
                   "studying at the local coffee shop ☕️", "reading a fantasy novel 📖", "cooking a new dish 🍳",
                   "jogging down Northwestern's Lakefill 🏃", "walking my dog Toby 🐶",
@@ -47,24 +35,7 @@ document.getElementById('logo').onclick = changeColor;
       }, 2000);
     }
     
-
 switchWord();
-
-function checkAnswers(event) {
-  event.preventDefault();
-
-  var q1 = document.getElementById("q1").value.toLowerCase();
-  var q2 = document.getElementById("q2").value.toLowerCase();
-  var q4 = document.getElementById("q4").value.toLowerCase();
-  var q5 = document.getElementById("q5").value.toLowerCase();
-  var q6 = document.getElementById("q6").value.toLowerCase();
-
-  if (q1 === "katsudon" && q2 === "mark" && q4 === "anna" && q5 === "where you are" && q6 === "love you") {
-      window.location.href = "success.html";
-  } else {
-      alert("Some answers are incorrect. Please try again.");
-  }
-}
 
 function allowDrop(ev) {                
     ev.preventDefault();
