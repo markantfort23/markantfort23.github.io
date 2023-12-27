@@ -1,0 +1,39 @@
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+#score, #lives {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+}
+
+#score {
+    left: 10px;
+}
+
+#lives {
+    right: 10px;
+}
+
+#fallingRice {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+#bowl {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+}
+
+#prepGif {
+    width: 100px;
+}
