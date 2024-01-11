@@ -63,24 +63,6 @@ function drop(ev) {
     }
 }
 
-    function check() {
-		var i = 1;
-		var correct = true;
-		var numImages = 5;
-		
-		while ( correct && i <= numImages ) {
-			node = document.getElementById( "drag1"+i );
-			correct = ( node.parentNode.id == ( "div2"+i ) );
-			i++;
-		}
-		
-		if ( correct ) {
-		
-			window.location.href = "winner.html";
-		}	
-		else alert ('Wrong');
-	}
-
 const animal = document.getElementById('animal');
 
 animal.addEventListener('click', () => {
